@@ -1,0 +1,27 @@
+<div class="loginModalContainer">
+    <div class="loginModal">
+        <div class="closeButtonContainer">
+            <button class="closeButton" [routerLink] = "['/inicio']">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </div>
+
+        <h1>Iniciar Sesión</h1>
+        <div class="subtitle">
+            <p>¿Eres nuevo en este sitio?</p>
+            <button class="registerButton" [routerLink] = "['/login/registro']">Registrate</button>
+        </div>
+
+        <form #loginForm = "ngForm" (ngSubmit)="login(loginForm)">
+            <label>Email</label>
+                <input type="email" class="form-control" name="email" [(ngModel)] = "user.email" required="">
+            <label>Contraseña</label>
+                <input type="password" class="form-control" name="password" [(ngModel)] = "user.password" required="">
+            <p>¿Olvidaste la contraseña?</p>
+            <div class="buttonLoginContainer">
+                <button type="submit" >Iniciar sesión</button>
+            </div>
+            
+        </form>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<!-- barra de navegacion -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primario sticky-top">
+    <div class="container">
+        <a class="navbar-brand nav__logo" href="./index.html">MEJARD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav__list ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link nav__link" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav__link" href="#">Recomendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav__link" href="#">Emails</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primario px-lg-4" [routerLink] = "['/login']">Inicia Sesión</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,50 @@
+<div class="registerModalContainer">
+    <div class="registerModal">
+        <div class="closeButtonContainer">
+            <button class="closeButton" [routerLink] = "['/inicio']">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </div>
+
+        <h1>Registrate</h1>
+        <div class="subtitle">
+            <p>¿Ya tienes un perfil personal?</p>
+            <button class="inicioButton" [routerLink] = "['/login']">Iniciar Sesión</button>
+        </div>
+
+        <form #registroForm = "ngForm" (ngSubmit) = "registro(registroForm)">
+            <div class="formContainer">
+                <div>
+                    <label>Email</label>
+                    <input class="form-control" type="email" placeholder="" required name="email" [(ngModel)]="cliente.email"/>
+                    <label>DNI</label>
+                    <input class="form-control" type="text" placeholder="" required name="dni" [(ngModel)]="cliente.dni"/>
+                    <label>Nombres</label>
+                    <input class="form-control" type="text" placeholder="" required name="nombres" [(ngModel)]="cliente.nombres"/>
+                    <label>Apellidos</label>
+                    <input class="form-control" type="text" placeholder="" required name="apellidos" [(ngModel)]="cliente.apellidos"/>
+                    
+                </div>
+                
+                <div>
+                    <label>Distrito</label>
+                    <input class="form-control" type="text" placeholder="" required name="distrito" [(ngModel)]="cliente.distrito"/>
+                    <label>Telefono</label>
+                    <input class="form-control" type="text" placeholder="" required name="telefono" [(ngModel)]="cliente.telefono"/>
+                    <label>Contraseña</label>
+                    <input class="form-control" type="password" placeholder="" required name="password" [(ngModel)]="cliente.password"/>
+                    <label>Direccion</label>
+                    <input class="form-control" type="text" placeholder="" required name="direccion" [(ngModel)]="cliente.direccion"/>
+                </div>
+            </div>
+            
+            
+            <div class="buttonRegisterContainer">
+                <button type="submit">Registrate</button>
+                <button [routerLink] = "['/login']">Regresar</button>
+            </div>
+            
+            
+        </form>
+    </div>
+</div>

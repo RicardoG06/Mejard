@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+*{margin: 0;}
+
+.loginModalContainer, .registerModalContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.loginModal, .registerModal{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    font-family: 'Lato', sans-serif;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.registerModal{
+    width: 70%;
+    max-width: 700px;
+}
+
+.loginModal > h1, .registerModal > h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+
+}
+
+.subtitle > p {
+    font-size: 14px;
+}
+
+.subtitle > button{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: #FFD951;
+    font-weight: 700;
+}
+
+.closeButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.closeButton{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: -50px;
+    margin-top: -50px;
+    transition: 400ms all;
+}
+
+.closeButton:hover{
+    color:rgb(185, 197, 199);
+}
+
+.registerModal  .closeButton{
+    margin-top: 0;
+}
+
+.loginModal > form > label, .registerModal > form label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.registerModal .formContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerModal .formContainer > div{
+    width: 45%;
+}
+
+.loginModal > form > input, .registerModal > form input{
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+    border:none;
+    border-bottom: 1px solid rgb(51, 50, 50);
+    margin-top: 20px;
+    padding: 5px;
+    outline: none;
+}
+
+.registerModal > form > input {
+    margin: 0;
+}
+
+.loginModal > form > p {
+    font-size: 14px;
+}
+
+.loginModal > form button, .registerModal > form button{
+    width: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background: #FFD951;
+    transition: 400ms all;
+    margin-top: 20px;
+}
+
+.loginModal > form button:hover, .registerModal > form button:hover{
+    opacity: .5;
+    color: white;
+}
+
+.buttonLoginContainer, .buttonRegisterContainer{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
